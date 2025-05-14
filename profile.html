@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Yashir Khan
+    </title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #eef2f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 120px;
+            border-radius: 50%;
+        }
+
+        .card h2 {
+            color: #0057e7;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .socialcard {
+            border-radius: 15px;
+            background-color: white;
+            padding: 0.5rem;
+            display: flex;
+            margin: 8px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 180px;
+            text-align: center;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            transition: transform 1 ease-in;
+        }
+
+        .socialcard:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transform: scale(1.1);
+        }
+
+        .socialcard img {
+            width: 20%;
+            border-radius: 10%;
+            padding-right: 8px;
+        }
+
+        .socialcard {
+            font: Arial;
+            text-align: center;
+        }
+
+        .socialrow {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    </style>
+    <script>
+        function thank() {
+            alert("Thanks for Visiting!!")
+        }
+    </script>
+</head>
+
+<body>
+    <div class="card">
+        <img src="https://avatars.githubusercontent.com/u/73583671?v=4" alt="Yashir's Photo">
+        <h2>Yashir Khan</h2>
+        <p>Aspiring Master Software Engineer 🧠💻</p>
+        <div class="socialrow">
+            <div class="socialcard">
+                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Yashir's GitHub" />
+                <a href="https://github.com/yashir5686">GitHub/yashir5686</a>
+            </div>
+            <div class="socialcard">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/500px-LinkedIn_logo_initials.png"
+                    alt="Yashir's LinkedIn" />
+                <a href="https://www.linkedin.com/in/yashir-khan-b3934a221/">LinkedIn/yashir</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
