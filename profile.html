@@ -41,6 +41,13 @@
             text-decoration: underline;
         }
 
+        .socialrow {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
         .socialcard {
             border-radius: 15px;
             background-color: white;
@@ -53,13 +60,12 @@
             text-align: center;
             align-items: center;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transform: scale(1);
-            transition: transform 1 ease-in;
+            transition: transform 0.3s;
         }
 
         .socialcard:hover {
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         .socialcard img {
@@ -73,10 +79,28 @@
             text-align: center;
         }
 
-        .socialrow {
-            display: inline-flex;
-            flex-direction: row;
+        .skills {
+            display: flex;
             flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            width: 150px;
+            text-align: center;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
         }
     </style>
     <script>
@@ -91,6 +115,7 @@
         <img src="https://avatars.githubusercontent.com/u/73583671?v=4" alt="Yashir's Photo">
         <h2>Yashir Khan</h2>
         <p>Aspiring Master Software Engineer 🧠💻</p>
+        <h2 style="color: black;">My Socials</h2>
         <div class="socialrow">
             <div class="socialcard">
                 <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Yashir's GitHub" />
@@ -101,6 +126,13 @@
                     alt="Yashir's LinkedIn" />
                 <a href="https://www.linkedin.com/in/yashir-khan-b3934a221/">LinkedIn/yashir</a>
             </div>
+        </div>
+        <h2 style="color: black;">My Skills</h2>
+        <div class="skills">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Web Dev</div>
+            <div class="skill-card">AI/ML</div>
+            <div class="skill-card">Game Dev</div>
         </div>
     </div>
 </body>
